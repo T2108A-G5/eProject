@@ -58,3 +58,23 @@ section .p-4{
 .container .position-absolute .btn-more:hover{
     color: #FFFFFF;
 }
+.container .position-absolute h4{
+    color: orange;
+}
+.position-absolute{
+    top: 38%;
+}
+#content .col-md-6 p{
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+}
+
+.height-300{
+    height: 300px;
+}
+.margin-y300{
+    margin-top: 170px;
+    margin-bottom: 170px;
+}
+

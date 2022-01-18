@@ -1,0 +1,31 @@
+.text-justify{
+    text-align: justify;
+}
+
+.content .row .col-md-8 a{
+    text-decoration: none;
+    color: black;
+    align-items: start;
+}
+
+.content .row .col-md-8 p{
+    font-size: 20px;
+    color: #999999;
+}
+html body{
+    overflow-x: hidden;
+}
+.my-4{
+    background: #f5f59d;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: left;
+
+}
+
+h5{
+    color: orange;
+    text-transform: uppercase;
+    font-weight: 700;
+}

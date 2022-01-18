@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Puppy | home</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/icon/icon_puppy.jpg">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -22,33 +23,54 @@
             <div class="container d-flex justify-content-between ">
                 <a href="home.html" class="logo" >
                     <img src="img/icon/icon_puppy.jpg" class="align-middle">
-                        <h2 class="text-logo" data-text="PUPPY">PUPPY</h2></a>
-                <ul class="">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="puppy_library.html">Puppy library</a></li>
-                    <li><a href="puppy_care.html">Puppy care</a></li>
-                    <li><a href="FAQ.html">FAQ</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <a href="login.html" class="btn-login">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        Login
-                    </a></li>
-                 </ul>
+                    <h2 class="text-logo" data-text="PUPPY">PUPPY</h2></a>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="text-end">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav align-items-end">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="home.html">Trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="puppy_library.html">Thư viện</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="puppy_care.html">Chăm sóc</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="FAQ.html">FAQ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="puppy_contact.html">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="login.html" class="btn-login" style="margin-right:0px">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                        Đăng nhập
+                                    </a></li>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </header>
         <section class="banner"><img src="img/banner/banner_dog.jpg"></section>
         <div class="container ">
             <div class="position-absolute animate__animated animate__fadeInLeft">
-                <h2>CHÀO MỪNG BẠN ĐẾN VỚI PUPPY</h2>
-                <p>Một website mà bạn có thể tìm hiểu về mọi loại chó</br>
-                    Điểm đến cho những người yêu chó.
+                <h2 class="h2-title">Để Hiểu Thêm Về Thú Cưng?</br> Đến Ngay Puppy</h2>
+                <h4>Kết Nối & Sẻ Chia</h4>
+                <p>Mang đến những kiến thức cơ bản và kinh nghiệm chăm sóc thú cưng.
                 </p>
-                <p>
+                <div>
                     <a href="puppy_library.html" class="pt-2 pb-2 btn btn-more"><span></span>Xem ngay</a>
-                </p>
+                </div>
             </div>
         </div>
     </div>
@@ -58,85 +80,109 @@
     <!-- start content-->
 
     <section id="content" class="container text-justify mt-5">
-        <h2 class="text-center text-info mb-5">GIỚI THIỆU</h2>
+        <h2 class="text-center text-info">GIỚI THIỆU</h2>
+        <h3 class="text-center text-info mb-5">Chào mừng bạn đến với Puppy</h3>
+        <div class="row mb-5 d-flex" style="align-items: center">
 
-        <div class="row mb-5">
 
-
-
-            <div class="col-md-5 wow bounceInLeft">
+            <div class="col-md-6 wow bounceInLeft" >
                 <img src="img/home/index_1.jpg" alt="Image placeholder" class="img-fluid float-left">
             </div>
-            <div class="col-md-7 mb-4">
-                <p>Chào! <span>tôi là Người bảo trợ</span>
-                    Tôi chưa bao giờ tưởng tượng rằng tôi có thể nhìn thấy nhiều sinh vật xinh đẹp trong cuộc sống của mình.</p>
-                <p>Trong những năm phục vụ trong quân đội, chúng tôi đã phải đối mặt với nhiều thử thách với những nhiệm vụ khó khăn,
-                    thời tiết khắc nghiệt và nỗi nhớ nhà.</p>
-                <p>Tuy nhiên, chú chó Army đã giúp chúng tôi vượt qua ngày khó khăn này nhờ sự thân thiện của chúng. Dần dần,
-                    tôi nhận ra rằng sinh vật này rất đẹp và bắt đầu nghiên cứu về chúng với tất cả các tính cách của chúng.</p>
+            <div class="col-md-6 mb-4">
+                <div>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Tại Puppy, chúng tôi không kinh doanh các loại thú cảnh.
+                    Trang hướng tới cung cấp thông tin về thú cưng và các cách chăm
+                    sóc chúng để cuộc sống của bạn với thú cưng ngày càng thú vị hơn.
+                </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Thú cưng tại đây chủ yếu là về loài chó trên thế giới,
+                    chúng tôi là một nền tảng cung cấp miễn phí kiến thức cho bạn đọc.
+                </p>
+                </div>
+
+                <div>
+
+                </div>
             </div>
         </div>
 
-        <div class="row mb-5">
-            <div class="col-md-7 mb-4">
-
-                <p>Tôi đã gặp Rex - một chú chó rất thông minh trong quân đoàn của chúng tôi.
-                    Anh ấy là một cậu bé thông minh và dũng cảm.</p>
-
-                <p>Cậu bé thông minh này đã đồng hành cùng tôi trong rất nhiều nhiệm vụ và cứu sống tôi rất nhiều lần.
-                    Anh ấy không chỉ là một người bạn, anh ấy còn là gia đình của tôi.</p>
-
-                <p>Tôi đã từng nghĩ chỉ có mình tôi mới có cảm giác này nhưng không,
-                    những người đồng đội của tôi cũng có cảm giác như vậy với người đồng hành của họ. Không thể tin được.</p>
+        <div class="row margin-y300 d-flex" style="align-items: center">
+            <div class="col-md-6 mb-4">
+                <p>Làm thế nào để biết thêm về người bạn bốn chân này?</p>
+                <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;Đối với mỗi giống chó, bạn có thể tìm hiểu thêm về lịch sử và tính cách,
+                    vị trí của chúng, v.v. Từ những giống chó khổng lồ có nhiều chú chó yêu thích đến các loại đồ chơi đáng yêu,
+                    thư viện giống chó phong phú của chúng tôi bao gồm nhiều loại và danh mục khác nhau.
+                </p>
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Hãy vào trong <a href="puppy_library.html" class="text-info " style="font-size: 20px"> thư viện</a>
+                    của chúng tôi để có thể xem thêm thông tin.</p>
             </div>
 
 
 
-            <div class="col-md-5">
-                <img src="img/home/index_2.jpg" alt="Image placeholder" class="img-fluid float-left" >
+            <div class="col-md-6">
+                <img src="img/home/index_2.jpg" alt="Image placeholder" class="img-fluid float-left " >
             </div>
         </div>
 
-        <div class="p-4 mb-5">
-
-            <p>Quân đoàn của chúng tôi đã đóng quân ở nhiều địa điểm từ Euroupe đến Bắc Mỹ rồi đến châu Á, tạo nhiều cơ hội để xem và nghiên cứu nhiều loại động vật,
-                trong đó con chó mang lại cho tôi rất nhiều hứng thú.</p>
-
-            <p>Sinh vật này thật tuyệt vời, khiến tôi có ý tưởng khám phá thêm về chúng và chia sẻ với bạn tôi khi tôi trở về nhà.</p>
-        </div>
-
-        <div class="row mb-5">
-            <div class="col-md-5">
+        <div class="row margin-y300 d-flex" style="align-items: center">
+            <div class="col-md-6">
                 <img src="img/home/index_3.jpg" class="img-fluid float-left" alt="Image placeholder">
             </div>
-            <div class="col-md-7 mb-4">
-                <p>Sau khi phục vụ trong quân đội, tôi trở về và nghiên cứu thêm về những con chó tôi
-                    đã gặp cũng như nghiên cứu để tìm ra những giống chó mới.</p>
-                <p>Tôi đã chia sẻ về điều này với bạn tôi - Chad và anh ấy là bác sĩ thú y
-                    và anh ấy rất vui vì ý tưởng và ủng hộ nó.</p>
-                <p>Đó là lý do tôi xuất bản trang web này để chia sẻ kinh nghiệm cũng như mẹo
-                    chăm sóc chó con cho mọi người với sự tư vấn từ Chad.</p>
+            <div class="col-md-6 mb-4">
+                <p>&nbsp;&nbsp;&nbsp;&nbsp;Một “spa dành cho chó con” hoàn chỉnh bao gồm việc chải chuốt từ đầu đến chân, cho dù bạn,
+                    một người chăm sóc lông chuyên nghiệp hay bác sĩ thú y của bạn. </p>
+                <p>Chải lông cho chó không chỉ là để làm cho con chó của bạn trông đẹp; </p>
+                <p>đây cũng là cơ hội để kiểm tra sức khỏe tổng quát của cún cưng.</p>
+                <p>Chúng tôi đã có phần <a href="puppy_care.html" class="text-info " style="font-size: 20px"> chăm sóc cho chú chó nhà bạn tại đây</a></p>
             </div>
         </div>
-        <div class="row mb-5">
+        <div class="row margin-y300 d-flex" style="align-items: center">
             <div class="col-md-7 mb-4">
                 <p><span>Cảm ơn bạn đã ghé thăm website của chúng tôi.</span></p>
-                <p>Chúng tôi hy vọng bạn có thể tìm thấy thông tin có giá trị về con chó ở đây và hãy chia
-                    sẻ với chúng tôi nhiều hơn về câu chuyện của bạn với bạn của bạn.</p>
-                <p>Nếu chúng tôi không thể tìm thấy câu trả lời cho câu hỏi của bạn ngay tại đây,
-                    vui lòng gửi câu hỏi cho chúng tôi, chúng tôi sẽ liên hệ lại với bạn trong thời gian sớm nhất.</p>
-            </div>
+                <p>Chúng tôi hy vọng bạn có thể tìm thấy thông tin có giá trị về chú chó và chia
+                    sẻ với chúng tôi nhiều hơn về câu chuyện của bạn mà bạn đang chăm sóc</p>
+                <p>Nếu chúng tôi không thể tìm thấy câu trả lời cho câu hỏi của bạn ngay tại đây.
 
+                    vui lòng <a href="puppy_contact.html" class="text-info " style="font-size: 20px"> gửi câu hỏi</a>
+                    cho chúng tôi, chúng tôi sẽ liên hệ lại với bạn trong thời gian sớm nhất.</p>
+            </div>
             <div class="col-md-5">
                 <img src="img/home/index_4.jpg" alt="Image placeholder" class="img-fluid float-right">
             </div>
         </div>
+    </section>
+<hr>
+    <div>
         <div class="container">
-            <div class="text-center">
-                <a href="puppy_library.html" class="mb-5 pe-3 ps-3 btn btn-more"><span></span>Khám phá</a>
+        <h2 class="text-center text-info py-3">Bài viết mới nhất</h2>
+        <div class="row d-flex my-5 ">
+            <div class="col-md-4" >
+                <img class="w-100 height-300" src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_960_720.jpg">
+                <p>Tên loài chó</p>
+                <a href="#">xem thêm</a>
+
+            </div>
+            <div class="col-md-4">
+                <img class="w-100 height-300" src="https://media.istockphoto.com/photos/cute-sitting-havanese-puppy-dog-picture-id611308904?k=20&m=611308904&s=612x612&w=0&h=B99HksP-hHXIIvPwSiez_VZOlExleJuKg1aXhHrbNls=">
+                <p>Tên loài chó</p>
+                <a href="#">xem thêm</a>
+
+            </div>
+            <div class="col-md-4">
+                <img class="w-100 height-300" src="data:image/jpeg;base64,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">
+                <p>Tên loài chó</p>
+                <a href="#">xem thêm</a>
             </div>
         </div>
-    </section>
+
+            <div class="text-center">
+                <a href="puppy_library.html" class="mb-5 pe-3 ps-3 btn btn-more"><span></span>Xem thêm</a>
+            </div>
+
+
+        </div>
+    </div>
+
     <!--end content-->
 
     <!--start footer-->
@@ -223,19 +269,19 @@
                 Đường dẫn nhanh
             </h6>
             <p>
-                <a href="#" class="text-reset">Home</a>
+                <a href="#" class="text-reset">Trang chủ</a>
             </p>
             <p>
-                <a href="puppy_library.html" class="text-reset">Puppy library</a>
+                <a href="puppy_library.html" class="text-reset">Thư viện</a>
             </p>
             <p>
-                <a href="#!" class="text-reset">Puppy care</a>
+                <a href="puppy_care.html" class="text-reset">Chăm sóc</a>
             </p>
             <p>
-                <a href="#!" class="text-reset">FQA</a>
+                <a href="FAQ.html" class="text-reset">FQA</a>
             </p>
             <p>
-                <a href="#!" class="text-reset">Contact</a>
+                <a href="puppy_contact.html" class="text-reset">Liên hệ</a>
             </p>
         </div>
     </div>
