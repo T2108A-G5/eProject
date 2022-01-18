@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Puppy | FAQ</title>
@@ -11,6 +11,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/header_and_footer.css">
     <script src="js/scroll_menu_html.js"></script>
+    <link rel="stylesheet" href="css/puppy_library.css">
+    <link rel="stylesheet" href="css/FAQ.css">
+    <script src="js/FAQ.js"></script>
 </head>
 <body>
 <!--start-->
@@ -20,36 +23,400 @@
             <a href="home.html" class="logo" >
                 <img src="img/icon/icon_puppy.jpg" class="align-middle">
                 <h2 class="text-logo" data-text="PUPPY">PUPPY</h2></a>
-            <ul class="">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="#">Puppy library</a></li>
-                <li><a href="puppy_care.html">Puppy care</a></li>
-                <li><a href="FAQ.html">FAQ</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <a href="login.html" class="btn-login">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Login
-                </a></li>
-            </ul>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="text-end">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav align-items-end">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="home.html">Trang chủ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="puppy_library.html">Thư viện</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="puppy_care.html">Chăm sóc</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="FAQ.html">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="puppy_contact.html">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="login.html" class="btn-login" style="margin-right:0px">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    Đăng nhập
+                                </a></li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
     <section class="banner"><img src="img/banner/banner_color.png"></section>
     <div class="container ">
         <div class="position-absolute ">
-            <h2 class="animate__animated animate__headShake">CÁC CÂU HỎI THƯỜNG GẶP</h2>
-            <p class=""><a href="home.html">Home</a> | <a href="#">FAQ</a></p>
+            <h2 class="animate__animated animate__headShake">Câu hỏi về trang Web của chúng tôi</h2>
+            <div class=""><a href="home.html">Trang chủ</a> | <a href="#">FQA</a></div>
         </div>
     </div>
 </div>
-</div>
-</div>
 
 <!-- end header-->
+
 <!--start content-->
-<div>
+
+<div class="container my-5 content">
+    <h2 class="text-info text-center mb-5">Các câu hỏi thường gặp của website</h2>
+    <div class="row text-justify">
+    <!--left-->
+        <div class="col-md-4 text-center">
+            <h5>Tiêm chủng</h5>
+        </div>
+
+    <!--right-->
+        <div class="col-md-8 ">
+            <button class="my-4 p-2">
+                <a href="#question1"  >Tại sao bạn nên tiêm phòng cho chó hoặc chó con của bạn?</a>
+            </button>
+
+            <p id="question1" class="answer">Việc tiêm phòng cho chó sẽ giúp chó của bạn
+                được bảo vệ khỏi một số bệnh truyền nhiễm phổ biến và nguy hiểm nhất.
+                Đặc biệt là đối với chó non, điều quan trọng là phải tiêm phòng đúng theo lịch tiêm phòng cho chó con
+                để giúp tăng cường khả năng miễn dịch của chúng.</p>
+
+            <button class="my-4 p-2">
+                <a href="#question2" class="">Vắc xin là gì và chúng hoạt động như thế nào?</a>
+            </button>
+
+             <p id="question2" class=" answer">
+                 Tiêm phòng cho chó và chó con về cơ bản là một trại huấn luyện cho hệ thống miễn dịch của con chó của bạn.
+                  Các tế bào bạch cầu trong cơ thể anh ta sẽ sản xuất ra các protein (được gọi là kháng thể),
+                  cùng với các tế bào bạch cầu khác, chống lại tác nhân lây nhiễm (được gọi là kháng nguyên).
+                   Bạn nên tiêm phòng cho chó thường xuyên để đảm bảo rằng cơ thể của nó vẫn có đủ
+                    các kháng thể đã được huấn luyện để có thể chống lại các vi trùng truyền nhiễm khi cần thiết.
+                </p>
+
+            <button class="my-4 p-2">
+                <a href="#question3" class="">Những loại vắc xin nào phổ biến nhất cho chó lớn và chó con?</a>
+            </button>
+
+            <p id="question3" class="py-3 answer">Hiệp hội Thú y Úc (AVA) chia việc tiêm phòng cho chó được khuyến nghị thành các loại
+                vắc xin “cốt lõi” và “không chính yếu”.</p>
+
+            <button class="my-4 p-2">
+                <a href="#question4" class=" ">Lịch tiêm phòng cho chó con và chó lớn</a>
+            </button>
+
+            <p id="question4" class="py-3 answer">Tiêm vacxin cho chó con sau khi sinh 30 ngày.</br>
+                Sau 7-8 tuần tiêm vacxin 6 mũi kết hợp lần thứ nhất.</br>
+                Sau 11-12 tuần tiêm nhắc lại lần thứ 2.</br>
+                Tiêm mũi phòng 5 bệnh khi chúng được 25, 45 và 70 ngày tuổi.</br>
+                Cún 3 tháng trở lên, cho chúng tiêm vacxin phòng bệnh dại, mỗi năm 1 lần.</p>
+
+        <button class="my-4 p-2">
+            <a href="#question5" class="">'Tiêm chủng quá mức'? kiểm tra tiêu đề có thể là một sự lựa chọn cho bạn</a>
+        </button>
+
+            <p id="question5" class="py-3 answer">Trong thập kỷ qua, ngày càng có nhiều tranh luận về việc tiêm phòng quá mức cho vật nuôi.
+                Tùy thuộc vào loại vắc xin được sử dụng và từng con vật, khả năng miễn dịch có thể kéo dài hơn
+                đáng kể trên 12 tháng. Một số chủ sở hữu vật nuôi lo lắng về việc tiêm phòng cho vật nuôi của họ trong
+                khi lượng miễn dịch của nó vẫn còn đủ.
+            </p>
+
+        <button class="my-4 p-2">
+            <a href="#question6" class="">Giải thích về việc tiêm phòng cho chó và chó con</a>
+        </button>
+            <p id="question6" class="py-3 answer">Việc tiêm phòng cho chó và chó được khuyến nghị sẽ giúp bảo vệ chó của bạn chống lại
+                một số bệnh rất nghiêm trọng như: Parvovirus ,Coronavirus ,Vacxin phòng bệnh dại ,Vacxin phòng bệnh dại,
+                sốt virus , Lyme...VV</p>
+        </div>
+    </div>
+    <div class="row text-justify">
+
+        <div class="col-md-4 text-center">
+            <h5>Mẹo làm sạch</h5>
+        </div>
+
+        <div class="col-md-8">
+            <button class="my-4 p-2">
+                <a href="#question7" class="">Làm thế nào để chọn loại thức ăn tốt nhất cho chó con?</a>
+            </button>
+
+            <p id="question7" class="py-3 answer">
+                Những gì bạn cho chó con ăn bây giờ có ảnh hưởng trực tiếp đến sức khỏe, sự tăng trưởng và phát
+                triển trong tương lai của nó, vì vậy không có gì ngạc nhiên khi tôi nhận được rất nhiều câu hỏi
+                về chế độ ăn uống và thức ăn cho chó con.
+                Chọn thức ăn cho chó con có ghi dòng chữ 'một chế độ ăn uống cân bằng và đầy đủ' trên bao bì.
+                Điều này cho thấy nó đáp ứng các tiêu chuẩn do AAFCO (Hiệp hội các quan chức kiểm soát thức
+                ăn chăn nuôi Hoa Kỳ) đặt ra.
+                Bạn cần đảm bảo thức ăn cho chó bạn chọn có nguồn protein chất lượng cao vì nó là thành phần
+                đầu tiên. Thịt gà hoặc thịt cừu đều là những lựa chọn tốt.
+                Chó con phát triển rất nhanh, và để hỗ trợ sự phát triển đó, chúng cần một chế độ ăn giàu
+                chất đạm, chất béo, vitamin và khoáng chất.
+                Giá trị protein nên khoảng 25% cộng thêm và chất béo khoảng 15%. Nếu bạn có một con giống lớn hoặc
+                một con chó con giống nhỏ, hãy tìm thức ăn cho chó con được thiết kế đặc biệt để đáp ứng các yêu cầu cụ thể của chúng.
+                Bạn có thể xem danh sách những loại mà tôi coi là thức ăn cho chó con tốt nhất trên thị trường
+            tại đây - Lựa chọn thức ăn cho chó con tốt nhất, cũng có thể xem trang Đánh giá thức ăn cho chó con của tôi.
+            </p>
+
+            <button class="my-4 p-2">
+            <a href="#question8" class="">Làm thế nào tôi có thể thoát khỏi vết bẩn và mùi nước tiểu của chó?</a>
+            </button>
+
+            <p id="question8" class="answer">Ngay cả khi quá trình huấn luyện ngồi bô diễn ra suôn sẻ, sẽ có lúc chú cún
+                cưng của bạn gặp 'tai nạn'. Đó là một trong những 'câu hỏi thường gặp về cuộc sống của cún con'.
+                Để tránh thảm bị hỏng, bạn cần nhanh chóng hành động và xử lý những vũng nước đó đúng cách.
+                Để có hiệu quả, bạn cần thấm hết chất lỏng có trong thảm. Sau đó, bạn cần rửa lại khu vực này
+                bằng nước sạch, mát và thấm nước đó.
+                Làm theo điều này với việc áp dụng chất tẩy rửa / khử mùi dựa trên enzym. Để chất này ngấm vào thảm
+                ít nhất 10 phút và sau đó thấm bớt phần thừa. Để cho khu vực khô hoàn toàn.
+                Bạn có thể cần lặp lại quá trình này nhiều lần.
+                Để biết thêm thông tin về cách giữ cho thảm của bạn không bị ố và không có mùi, cũng như tìm hiểu sản
+                phẩm nào THỰC SỰ hoạt động, hãy xem trang Sản phẩm làm sạch nước tiểu cho chó và Sản phẩm
+                làm sạch nước tiểu tốt nhất cho chó của tôi.
+        </p>
+
+            <button class="my-4 p-2">
+                <a href="#question9" class="">Chó của tôi có bị giun không và tôi phải điều trị chúng như thế nào?</a>
+            </button>
+
+            <p id="question9" class="py-3 answer">
+                Những gì bạn cho chó con ăn bây giờ có ảnh hưởng trực tiếp đến sức khỏe, sự tăng trưởng và phát
+                triển trong tương lai của nó, vì vậy không có gì ngạc nhiên khi tôi nhận được rất nhiều câu hỏi
+                về chế độ ăn uống và thức ăn cho chó con.
+                Chọn thức ăn cho chó con có ghi dòng chữ 'một chế độ ăn uống cân bằng và đầy đủ' trên bao bì.
+                Điều này cho thấy nó đáp ứng các tiêu chuẩn do AAFCO (Hiệp hội các quan chức kiểm soát thức
+                ăn chăn nuôi Hoa Kỳ) đặt ra.
+                Bạn cần đảm bảo thức ăn cho chó bạn chọn có nguồn protein chất lượng cao vì nó là thành phần đầu tiên.
+                Thịt gà hoặc thịt cừu đều là những lựa chọn tốt.
+                Chó con phát triển rất nhanh, và để hỗ trợ sự phát triển đó, chúng cần một chế độ ăn giàu chất đạm,
+                chất béo, vitamin và khoáng chất.
+                Giá trị protein nên khoảng 25% cộng thêm và chất béo khoảng 15%. Nếu bạn có một con giống lớn hoặc một
+                con chó con giống nhỏ, hãy tìm thức ăn cho chó con được thiết kế đặc biệt để đáp ứng các yêu cầu cụ thể của chúng.
+                Bạn có thể xem danh sách những loại mà tôi coi là thức ăn cho chó con tốt nhất trên thị trường
+                tại đây - Lựa chọn thức ăn cho chó con tốt nhất, cũng có thể xem trang Đánh giá thức ăn cho chó con của tôi.
+
+                Ngay cả khi quá trình huấn luyện ngồi bô diễn ra suôn sẻ, sẽ có lúc chú cún cưng của bạn gặp 'tai nạn'.
+                Đó là một trong những 'câu hỏi thường gặp về cuộc sống của cún con'.
+                Để tránh thảm bị hỏng, bạn cần nhanh chóng hành động và xử lý những vũng nước đó đúng cách.
+                Để có hiệu quả, bạn cần thấm hết chất lỏng có trong thảm. Sau đó, bạn cần rửa lại khu vực này
+                bằng nước sạch, mát và thấm nước đó.
+                Làm theo điều này với việc áp dụng chất tẩy rửa / khử mùi dựa trên enzym. Để chất này ngấm vào
+                thảm ít nhất 10 phút và sau đó thấm bớt phần thừa. Để cho khu vực khô hoàn toàn.
+                Bạn có thể cần lặp lại quá trình này nhiều lần.
+                Để biết thêm thông tin về cách giữ cho thảm của bạn không bị ố và không có mùi, cũng như tìm
+                hiểu sản phẩm nào THỰC SỰ hoạt động, hãy xem trang Sản phẩm làm sạch nước tiểu cho chó và Sản phẩm làm sạch nước tiểu tốt nhất cho chó của tôi.
+
+                Một tỷ lệ lớn chó con có giun và nếu bạn là một người mới làm cha mẹ, đó là điều bạn có thể phải đối phó.
+                Một số loại giun có thể được nhìn thấy trong phân của chó, và trong trường hợp nghiêm trọng bị nhiễm giun đũa, con chó của bạn thậm chí có thể có giun trong chất nôn của chúng. Các triệu chứng khác của nhiễm giun bao gồm bụng tròn, căng phồng, lớp lông xù xì, xỉn màu hoặc ho.
+                Mặc dù rất phổ biến, nhưng giun có thể khiến con chó con của bạn khá ốm ... ít nhất thì nó sẽ cảm thấy và trông 'khác thường'.
+                Bạn sẽ cần bác sĩ thú y chẩn đoán và xác nhận sự lây nhiễm cũng như loại giun liên quan. Sau đó, họ sẽ kê đơn hoặc quản lý thuốc tẩy giun thích hợp. Không sử dụng thuốc không kê đơn vì chúng có thể không có hiệu quả tốt nhất và có hại cho sức khỏe.
+                Giun tim là một câu chuyện khác, nhưng bạn khó có thể tìm thấy chúng ở một chú cún con.
+                Bạn có thể tìm hiểu thêm về giun, nguyên nhân, triệu chứng và cách điều trị trên trang Puppy Worms của tôi</p>
+
+            <button class="my-4 p-2">
+                <a href="#question10" class="">Trợ giúp-con chó con của tôi bị tiêu chảy!</a>
+            </button>
+
+            <p id="question10" class="py-3 answer">Đây là một trong những câu hỏi mà không nhất thiết phải dễ dàng tìm ra câu trả lời nếu không có sự trợ giúp của bác sĩ thú y.
+                Tiêu chảy ở chó con rất phổ biến và có thể là dấu hiệu của chứng đau bụng do thay đổi chế độ ăn uống chẳng hạn - hoặc một căn bệnh nghiêm trọng chết người như Parvo.
+                Nếu con chó con của bạn bị tiêu chảy trông có vẻ đặc như bánh pudding sô cô la, nhưng có vẻ không sao, rất có thể nó đã ăn thứ mà chúng không nên.
+                Nếu anh ta không nôn mửa, tỉnh táo, vui tươi và sáng mắt, bạn có thể đủ khả năng để chờ xem một thời gian. NHƯNG nếu anh ta không cảm thấy tốt hơn trong vòng 24 giờ, hoặc có vẻ trở nên tồi tệ hơn, hãy gọi cho bác sĩ thú y của bạn ngay lập tức.
+                Nếu chó con của bạn bị tiêu chảy nặng và chảy nước, nôn mửa và / hoặc có vẻ lờ đờ, mắt đờ đẫn và có vẻ như không được khỏe, bạn cần liên hệ với bác sĩ thú y ngay lập tức.
+                Nếu đó là sau giờ làm việc, bạn nên liên hệ với phòng khám thú cưng khẩn cấp 24 giờ gần nhất. Đây có thể là một tình huống sinh tử.
+                Để biết thêm thông tin chi tiết về phàn nàn về chó con phổ biến này, hãy xem trang Bệnh tiêu chảy của chó con của tôi.</p>
+
+        </div>
+    </div>
+    <div class="row text-justify">
+        <!--left-->
+        <div class="col-md-4 text-center">
+            <h5>Mẹo đào tạo</h5>
+        </div>
+
+        <!--right-->
+        <div class="col-md-8 ">
+
+            <button class="my-4 p-2">
+                <a href="#question12" class="" >Làm thế nào tôi có thể huấn luyện chó con của tôi đúng cách?</a>
+            </button>
+            <p id="question12" class="py-3 answer">Nếu muốn chú cún nhỏ quý giá của mình lớn lên trở thành một người bạn
+                đồng hành tốt, bạn cần dạy chúng một số cách cư xử và một số mệnh lệnh cơ bản về vâng lời.</br>
+                Một số câu hỏi thường gặp về chó con xoay quanh hành vi của chó con và tìm hiểu hành vi nào có thể
+                chấp nhận được và điều gì không nên là một số bài học đầu tiên của chúng!</br>
+                Nếu bạn muốn chó con hiểu những gì bạn mong đợi ở nó, có ba bước đơn giản mà bạn PHẢI làm theo: nói
+                cho chó con biết bạn muốn nó làm gì</br>
+                Giúp anh ta thực hiện hành vi đó,<br>
+                thưởng cho anh ta những món ăn ngon và / hoặc khen ngợi khi anh ta thành công Vài buổi đào tạo ngắn mỗi
+                ngày tốt hơn nhiều so với một buổi tập dài hơn vì bạn muốn anh ta tận hưởng các buổi đào tạo của mình và
+                nghĩ rằng chúng là một phần thú vị của anh ta ngày.<br>
+                Điều đầu tiên cần dạy cho con bạn là nhận biết tên của mình. Sau đó, các lệnh cơ bản để nghe lời mà bạn
+                muốn chó con dạy nó là "ngồi", "đến" và "xuống". Bạn có thể đọc thêm về điều này trên Trang Huấn luyện Chó con của tôi</p>
+
+            <button class="my-4 p-2">
+                <a href="#question13" class="" >Làm cách nào để có thể giới thiệu chú chó con mới với chú chó thường trú ?</a>
+            </button>
+            <p id="question13" class="py-3 answer">Hầu hết các con chó đều học cách hòa đồng với người mới (và một số linh
+                hồn siêu hòa đồng sẽ chấp nhận chúng ngay lập tức), nhưng nếu con chó lớn hơn của bạn đối xử với em bé
+                mới bằng một điều gì đó kém nhiệt tình không kiềm chế thì nó sẽ không phải là người đầu tiên làm như vậy!<br>
+                Khi chọn một chú chó mới để hòa nhập vào gia đình, tốt nhất bạn nên chọn một trong những con khác giới
+                với chó cư trú. Hai con chó cùng giới tính ít có khả năng hòa hợp hơn khi trưởng thành,
+                đặc biệt nếu chúng không bị trung hòa / giết hại.<br>
+                Ngoài ra, hãy xem xét kích thước và tính khí, một con chó lớn tuổi có khả năng săn mồi cao có thể
+                không phù hợp nhất với một con chó con thuộc giống nhỏ, di chuyển nhanh như Yorkshire Terrier.<br>
+                Thực hiện những lời giới thiệu ban đầu dưới sự giám sát và mong đợi một số lưỡng lự của một trong hai chú chó.
+                Luôn nhớ thể hiện nhiều tình cảm với con chó lớn của bạn.<br>
+                Đôi khi, thật khó để rời xa một chú chó con mới đáng yêu, nhưng hãy chú ý chào hỏi, cho ăn và
+                cưng nựng chú chó lớn hơn trước, vì điều đó củng cố địa vị của chúng (trong cả mắt của chú và chú cún mới)
+                và giúp duy trì quá trình chuyển đổi tự nhiên sang 'trật tự mổ'.
+                Bạn có thể tìm thêm thông tin chi tiết về cách xử lý những lời giới thiệu này trên trang Giới thiệu Một
+                chú chó con Mới của tôi.<br>
+                My Dog Barks & Destroys Stuff When I Out - Tôi phải làm gì? Chú chó con hoặc chú chó của bạn có khiến
+                những người hàng xóm phát điên với tiếng sủa và hú của mình không? Anh ấy có cố gắng sửa sang lại nhà
+                của bạn (có thể bằng cách đục lỗ trên tường / cửa hoặc phá hủy thảm và đồ nội thất) khi bạn ra ngoài không?
+                Nếu vậy, rất có thể anh ấy đang bị chứng lo lắng chia ly. Có nhiều mức độ lo lắng khi chia ly, từ đau
+                khổ nhẹ đến cuồng loạn (về phía con chó, không phải bạn. Mặc dù việc nhìn thấy tấm thảm Ba Tư rách nát
+                có khả năng gây ra phản ứng cuồng loạn!).<br>
+                Chó con có thể sợ hãi vì một số lý do hoặc lo lắng khi chia tay.<br>
+                Có đủ loại phương pháp điều trị cho vấn đề này, tùy thuộc vào mức độ lo lắng, nguyên nhân gây ra nó và độ tuổi của anh ta.<br>
+                Tất cả mọi thứ từ các sản phẩm thảo dược đơn giản, CD giúp xoa dịu hoặc đào tạo điều chỉnh hành vi đều có thể hoạt động.<br>
+                Bằng cách sử dụng một hoặc kết hợp các phương pháp điều trị, bạn sẽ có thể giảm mức độ lo lắng của chó
+                và dạy chúng rằng không sao khi ở một mình trong một thời gian và bạn luôn quay trở lại.<br>
+                Để tìm hiểu thêm về cách bạn có thể giúp thú cưng của mình vượt qua nỗi sợ hãi và mang lại sự bình
+                yên cho ngôi nhà của bạn, hãy xem các trang Huấn luyện chó dành cho chứng lo âu khi tách biệt và thuốc
+                chống lo âu khi tách biệt chó của tôi.<br>
+            </p>
+
+            <button class="my-4 p-2">
+                <a href="#question14" class="" >Tại sao PUP của tôi luôn liếm và cào chính mình ?</a>
+            </button>
+
+            <div id="question14" class="py-3 answer" style="color: #999999;font-size: 20px">Liếm và cào/ hoặc gãi liên tục và da đỏ, ngứa hoặc rụng lông đều là dấu hiệu của bệnh dị ứng ở chó.
+                Tôi nghĩ rằng điều quan trọng là phải chỉ ra trong trang Câu hỏi thường gặp về chó con này rằng chó cũng bị dị ứng giống như con người!
+                Có nhiều nguyên nhân và tác nhân gây dị ứng ở chó khác nhau, nhưng hầu hết đều dẫn đến các vấn đề về da và nhiều loại dị ứng khác nhau, bao gồm
+                :
+                <ul>
+                   <li> Do da chân của chó bị khô</li>
+                    <li>Dị ứng thức ăn cho chó</li>
+                    <li>Dị ứng tiếp xúc</li>
+                    <li>Dị ứng với thuốc và sửa tắm</li>
+                </ul>
+                Có rất nhiều cách khác nhau để điều trị dị ứng ở chó, và tất nhiên việc điều trị phụ thuộc vào tác nhân gây bệnh!</div>
+            <button class="my-4 p-2">
+                <a href="#question15" class=" " >Nên mang chú chó về nhà khi nó được bao nhiêu tuổi?</a>
+            </button>
+
+            <p id="question15" class=" answer">Điều cực kỳ quan trọng là nhận ra rằng chó con cần phải ở với mẹ và
+                bạn cùng lứa tối thiểu là 7 tuần tuổi. Giai đoạn 5-7 tuần rất quan trọng, là khi chó con học các bài
+                học xã hội về cách kiểm soát cường độ vết cắn của chúng (thông qua việc chơi với bạn cùng lứa), cách
+                chấp nhận kỷ luật và phản ứng với nó đúng cách cũng như cách diễn giải đúng ngôn ngữ cơ thể của chó. .<br>
+                Những chú chuột con được thả trong nhà trước khi trải qua giai đoạn này có xu hướng cắn mạnh hơn và
+                tiếp tục hành vi này đến tuổi vị thành niên, so với những chú chuột con ở cùng lứa đến 7 tuần tuổi. Và
+                tất nhiên, việc không hiểu ngôn ngữ cơ thể của chó có thể dẫn đến một loạt vấn đề - không thể chơi đúng
+                cách, sợ hãi, quá phấn khích hoặc thậm chí gây hấn với những con chó khác.
+                Một lưu ý thêm là 7 tuần tuổi là độ tuổi mà hầu hết các nhà chăn nuôi và chuyên gia động vật có kinh
+                nghiệm cho rằng việc kiểm tra năng khiếu và tính khí của chó con là đáng tin cậy nhất. Vì vậy, nếu nhà
+                lai tạo của bạn đang thực hiện một trong những bài kiểm tra này để giúp xác định con chó con nào sẽ phù
+                hợp nhất với bạn, thì việc sắp xếp sẽ là vào hoặc sau 7 tuần tuổi. Điều đó nói lên rằng, thông thường
+                chuột con sẽ về nhà muộn hơn 7 tuần tuổi một chút, miễn là người chăn nuôi được trang bị để huấn luyện
+                và hòa nhập với lứa. Với giống chó của mình, tôi thấy 9 tuần tuổi là một độ tuổi tốt, ở chỗ những con
+                chuột con thường đã sẵn sàng về mặt cảm xúc và háo hức thực hiện quá trình chuyển đổi và gắn bó với
+                những người chủ mới. Một số giống chó nhỏ hơn có thể mất nhiều thời gian hơn để trưởng thành về mặt thể
+                chất và có thể điều chỉnh dễ dàng hơn - và săn mồi dễ dàng hơn - khi chúng được đặt ở 10 hoặc thậm
+                chí 12 tuần tuổi.<br>
+                Dù ở độ tuổi nào, điều quan trọng cần nhấn mạnh là, nếu người chăn nuôi giữ những chú chuột con đã
+                qua 7 tuần tuổi, họ phải cam kết dành thời gian để giới thiệu thường xuyên và chu đáo cho từng chú
+                chó con với những điểm tham quan, âm thanh, bề mặt, con người, động vật mới. và địa điểm.
+            </p>
+        </div>
+    </div>
+
+    <div class="row text-justify">
+        <!--left-->
+        <div class="col-md-4 text-center">
+            <h5>Môi trường cho chó con</h5>
+        </div>
+
+        <!--right-->
+        <div class="col-md-8 ">
+            <button class="my-4 p-2">
+                <a href="#question16">Bất kì khuyến nghị nào cho chúng tôi lần đầu tiên về nhà với chó con</a>
+            </button>
+
+            <p id="question16" class="answer">Trước tiên, nên cho chó con của bạn một khoảng thời gian để giải khuây
+                bên ngoài, trước khi đưa chúng vào trong nhà. Nếu anh ta quá mất tập trung và không đi, hãy đưa anh ta
+                vào trong nhà, nhưng bế anh ta hoặc chỉ đặt anh ta xuống trong một khoảng thời gian ngắn, sau đó đưa
+                anh ta trở lại bên ngoài. Điều quan trọng là mọi việc loại bỏ đều phải được thực hiện trong khu vực
+                thường xuyên ngồi bô của trẻ, hoặc ít nhất là bên ngoài, lần đầu tiên đó.<br>
+
+                Một khi chú chó của bạn đã bớt căng thẳng, hãy thoải mái cho phép chúng khám phá một chút -
+                tất nhiên là được giám sát cẩn thận! Anh ấy không cần phải xem toàn bộ ngôi nhà, nhưng việc khám
+                phá các khu vực sinh hoạt chính sẽ giúp anh ấy định hướng và điều chỉnh. Vậy thì tốt thôi, mời uống
+                nước, nhưng đừng cho thức ăn nữa. Chú chó của bạn rất có thể sẽ cần một giấc ngủ ngắn sau tất cả sự
+                phấn khích, và rất có thể dạ dày của nó sẽ không sẵn sàng cho thức ăn cho đến sau đó.<br>
+            </p>
+
+        <button class="my-4 p-2">
+                <a href="#question17">Khi nào tôi nên chuyển sang thức ăn cho chó trưởng thành?</a>
+        </button>
+
+            <p id="question17" class="answer">Đối với chó con giống vừa và nhỏ, hãy chuyển sang sữa công thức chất
+                lượng cao dành cho người lớn như EUKANUBA ™ khi chúng được 1 tuổi. Những con chó giống lớn nên chuyển
+                đổi vào đầu năm thứ hai của chúng.</p>
+
+        <button class="my-4 p-2">
+            <a href="#question18">Tôi nên chải lông hoặc tắm cho thú cưng bao lâu một lần?</a>
+        </button>
+
+        <p id="question18" class="answer">Các giống chó lông dài nên được chải lông hàng ngày (cho chó ăn một bữa
+            khi bạn làm xong để chúng biết rằng việc chải lông là bổ ích). Tắm cho chó khi bạn phát hiện có mùi,
+            nhưng tránh làm quá mạnh vì da chúng rất nhạy cảm.</p>
+
+        <button class="my-4 p-2">
+            <a href="#question19">Tôi có thể giúp chó con bị táo bón của tôi như thế nào?</a>
+        </button>
+
+        <p id="question19" class="answer">Những chú chó con có thể bị táo bón theo thời gian, và thường thì những giống
+            chó nhỏ / tí hon mới gặp rắc rối.<br>
+            Có nhiều lý do tại sao chó con có thể bị táo bón, và những lý do này từ tình trạng y tế đến bóng tóc
+            (và mọi thứ liên quan!).<br>
+            Có một số điều đơn giản bạn có thể làm để điều trị vấn đề và ngăn nó xảy ra lần nữa. Một chế độ ăn uống
+            phù hợp, uống nhiều nước và vận động nhiều đều là những yếu tố cần thiết để có một hệ tiêu hóa khỏe mạnh.<br>
+            Tìm hiểu thêm về cách ngăn ngừa và điều trị chứng táo bón cho chó con trên trang A Constipated Puppy của tôi.<br>
+        </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <!--left-->
+        <div class="col-md-4 text-center">
+            <h5>Kế hoạch dinh dưỡng</h5>
+        </div>
+        <!--right-->
+        <div class="col-md-8 ">
+
+            <button class="my-4 p-2">
+                <a href="#question20">Nhu cầu dinh dưỡng đối với cân nặng của chó con khác nhau như thế nào?</a>
+            </button>
+            <p id="question20" class="answer">Chó con giống nhỏ phát triển nhanh hơn nhiều so với các giống chó khác. Chúng có tốc độ
+                trao đổi chất nhanh hơn và cần lượng protein, chất béo, canxi và phốt pho cao hơn. Trong khi đó, những
+                con chó giống lớn không được coi là trưởng thành hoàn toàn cho đến khi chúng được gần 2 tuổi. Và trong
+                khi nhiều người nghĩ rằng những giống chó lớn nên ăn một lượng lớn thức ăn, chúng chỉ đơn giản là cần
+                những bữa ăn có đủ chất dinh dưỡng. (Nếu được cho ăn quá nhiều, những con vật này có nguy cơ tăng cân
+                quá nhanh và có thể phát triển các vấn đề về xương.)
+
+            </p>
+        </div>
+    </div>
+
 
 </div>
 <!--end content-->
@@ -138,19 +505,19 @@
                 Đường dẫn nhanh
             </h6>
             <p>
-                <a href="#" class="text-reset">Home</a>
+                <a href="home.html" class="text-reset">Trang chủ</a>
             </p>
             <p>
-                <a href="puppy_library.html" class="text-reset">Puppy library</a>
+                <a href="puppy_library.html" class="text-reset">Thư viện</a>
             </p>
             <p>
-                <a href="#!" class="text-reset">Puppy care</a>
+                <a href="puppy_care.html" class="text-reset">Chăm sóc</a>
             </p>
             <p>
-                <a href="#!" class="text-reset">FQA</a>
+                <a href="#" class="text-reset">FQA</a>
             </p>
             <p>
-                <a href="#!" class="text-reset">Contact</a>
+                <a href="puppy_contact.html" class="text-reset">Liên hệ</a>
             </p>
         </div>
     </div>
