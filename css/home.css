@@ -63,6 +63,8 @@ section .p-4{
 }
 .position-absolute{
     top: 38%;
+    left: 35%;
+
 }
 #content .col-md-6 p{
     justify-content: center;
@@ -78,3 +80,124 @@ section .p-4{
     margin-bottom: 170px;
 }
 
+#searchNameDog{
+    border:0;
+    line-height: 40px;
+    padding-left: 10px;
+    width: 300px;
+}
+
+#submitNameDog{
+    height: 40px;
+    border:0;
+    width: 45px;
+
+}
+.btnSearch{
+    border: 1px solid #00BFFF;
+    padding: 5px;
+    color: #00BFFF;
+
+}
+
+.container .position-absolute ,.container .position-absolute .d-flex a {
+    color: black;
+    font-family: 'poppins',SansSerif;
+
+}
+.container .position-absolute .d-flex a:hover{
+    background: #00BFFF;
+    color: #FFFFFF;
+}
+
+#listNameDog{
+    top: 60%;
+    left: 100px;
+    display: none;
+}
+#searchNameDog:focus ~ #listNameDog{
+    display: block;
+    background-color: #FFFFFF;
+    width: 100%;
+    border: 1px solid #00BFFF;
+    border-collapse: collapse;
+    list-style-type: none;
+
+}
+.item-name-dog{
+    border-top: 1px solid #00BFFF;
+    border-bottom: 1px solid #00BFFF;
+
+    padding: 15px 20px;
+}
+.w-35{
+    width: 35%;
+}
+
+
+
+.container .col-md-4  img{
+    height: 200px;
+}
+
+.listdog-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+}
+.Dog-item {
+    background-color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+.Dog-item img{
+    border-radius: 10px 10px 0 0;
+}
+
+#listNameDog .item-name-dog a{
+    width: 100%;
+}
+.carousel-inner {
+    padding: 1em;
+}
+.card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #e1e1e1;
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+@media (min-width: 768px) {
+    .carousel-item {
+        margin-right: 0;
+        flex: 0 0 33.333333%;
+        display: block;
+    }
+    .carousel-inner {
+        display: flex;
+    }
+}
+.card .img-wrapper {
+    max-width: 100%;
+    height: 13em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img {
+    max-height: 100%;
+}
+@media (max-width: 767px) {
+    .card .img-wrapper {
+        height: 17em;
+    }
+}
