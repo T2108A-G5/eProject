@@ -74,7 +74,7 @@
                     <div style="background: #FFFFFF;width: 300px;height: 40px" >
                         <input type="text" placeholder="Tên loài chó"  class="" name="searchNameDog" id="searchNameDog" >
                         <ul class="position-absolute" id="listNameDog">
-                                <li class="item-name-dog"><a href="#" target="_blank">Bully</a></li>
+                                <li class="item-name-dog"><a href="#">Bully</a></li>
                                <li class="item-name-dog"> <a href="#">Pit bull</a></li>
                                 <li class="item-name-dog"><a href="#">chi hua hua</a></li>
                                 <li class="item-name-dog"><a href="#">Bull Pháp</a></li>
@@ -184,7 +184,7 @@
 
         <!--filter-->
             <h2 id="boloc" class="text-center my-3">Lọc theo giống chó</h2>
-        <div class="row align-items-center justify-content-center">
+        <div class="row ">
                 <div class="col-md-5 ">
                     <p class="text-center ">Kích cỡ</p>
                     <div class="d-flex justify-content-between">
@@ -214,12 +214,66 @@
                         <label class="btn btn-outline-primary w-35" for="ngoc-nghech">Ngốc nghếch</label>
                     </div>
                 </div>
+                <div class="col-md-3">
+                    <div class="mt-5 text-center">
+                        <button type="button" class="border-0 bg-white" id="reset" name="datLaiBoLoc">đặt lại bộ lọc</button>
+
+                    </div>
+                </div>
             </div>
 
 
-                <div class="collapse" id="collapseExample">
-                    <div>
+                <div class="collapse " id="collapseExample">
+                    <div class="mt-5">
+                        <div class="row text-center">
+                            <div class="col-md-4 ">
+                                <p>Thân thiện</p>
+                                    <div class="w-100">
+                                        <input type="checkbox" class="btn-check w-100" id="ttVoiCho" name="thanThien[VoiCho]" value="" autocomplete="off">
+                                        <label class="btn btn-outline-primary w-100" for="ttVoiCho">Thân thiện với những chú chó</label>
+                                    </div>
+                                    <div class="w-100">
+                                        <input type="checkbox" class="btn-check w-100 " id="ttVoiVatNuoiKhac" name="thanThien[VoiVatNuoiKhac]" value="" autocomplete="off">
+                                        <label class="btn btn-outline-primary w-100" for="ttVoiVatNuoiKhac">Thân thiện với vật nuôi khác</label>
+                                    </div>
+                            </div>
 
+                            <div class="col-md-4 ">
+                                <p>Khu vực</p>
+                                <div class="d-flex">
+                                    <div class="w-33">
+                                        <input type="checkbox" class="btn-check w-100" id="chauA" name="khuVuc[chauA]" value="" autocomplete="off">
+                                        <label class="btn btn-outline-primary w-100" for="chauA">châu Á</label>
+                                    </div>
+                                    <div class="w-33">
+                                        <input type="checkbox" class="btn-check w-100 " id="chauAu" name="khuVuc[chauAu]" value="" autocomplete="off">
+                                        <label class="btn btn-outline-primary w-100" for="chauAu">Châu Âu</label>
+                                    </div>
+                                    <div class="w-33">
+                                        <input type="checkbox" class="btn-check w-100 " id="chauMy" name="khuVuc[chauMy]" value="" autocomplete="off">
+                                        <label class="btn btn-outline-primary w-100" for="chauMy">Châu Âu</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 ">
+                                <p>Tình cảm</p>
+                                <div class="d-flex">
+                                    <div class="w-33">
+                                        <input type="checkbox" class="btn-check w-100" id="docLap" name="tinhCam[doclap]" value="" autocomplete="off">
+                                        <label class="btn btn-outline-primary w-100" for="docLap">Độc lập</label>
+                                    </div>
+                                    <div class="w-33">
+                                        <input type="checkbox" class="btn-check w-100 " id="canBang" name="tinhCam[canBang]" value="" autocomplete="off">
+                                        <label class="btn btn-outline-primary w-100" for="canBang">Cân bằng</label>
+                                    </div>
+                                    <div class="w-33">
+                                        <input type="checkbox" class="btn-check w-100 " id="auYem" name="tinhCam[auYem]" value="" autocomplete="off">
+                                        <label class="btn btn-outline-primary w-100" for="auYem">Âu yếm</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
                 <div class="mx-auto" style="width: 155px;">
@@ -470,9 +524,6 @@
         } else {
             $(multipleCardCarousel).addClass("slide");
         }
-
-
-
     </script>
 </body>
 </html>
