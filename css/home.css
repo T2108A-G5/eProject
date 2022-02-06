@@ -201,3 +201,36 @@ section .p-4{
         height: 17em;
     }
 }
+#reset:hover{
+    color: #00BFFF;
+    text-decoration: underline;
+}
+
+.w-33{
+    width: 33.33333333%;
+}
+
+.btn-check:active+.btn-outline-primary, .btn-check:checked+.btn-outline-primary, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show, .btn-outline-primary:active,.btn-outline-primary:hover{
+    color: #fff;
+    background-color: #00BFFF;
+    border-color: #00BFFF;
+}
+.btn-outline-primary{
+    color: #00BFFF;
+    border-color: #00BFFF;
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .position-absolute{
+        top: 20%;
+        left: 25%;
+    }
+}
+
+@media (max-width: 600px) {
+    .position-absolute{
+        top: 15%;
+        left: 20%;
+    }
+}
