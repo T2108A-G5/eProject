@@ -3,9 +3,9 @@ $(document).ready(function (){
    $('.message.email').hide();
    $('.message.content').hide();
 
-
+      var ho = $('#Ho');
    $('#submitFormContact').click(function (){
-      if ($('#Ho').val()==''|| $('#Ho').val()==null){
+      if (ho.val()===''|| ho.val()==null){
          $('.message.name').show();
          $('#Ho').focus();
          return false;
