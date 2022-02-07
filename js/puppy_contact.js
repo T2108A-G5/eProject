@@ -10,23 +10,29 @@ $(document).ready(function (){
          $('#Ho').focus();
          return false;
       }
-      else if ($('#Ten').val() ==null|| $('#Ten').val() ==''){
+       else if ($('#Ten').val() ==null|| $('#Ten').val() ==''){
          $('.message.name').show();
          $('#Ten').focus();
          return false;
       }
+       else{
+         $('.message.name').hide();
+      }
 
-      else if ($('#email').val() ==null|| $('#email').val() == ''){
+      if ($('#email').val() ==null|| $('#email').val() == ''){
          $('.message.email').show();
          $('#email').focus();
          return false;
+      }else{
+         $('.message.email').hide();
       }
-      else if ($('#content').val() ==null|| $('#content').val() == ''){
+       if ($('#content').val() ==null|| $('#content').val() == ''){
          $('.message.content').show();
          $('#content').focus();
          return false;
       }
       else{
+          $('.message.content').hide();
          alert('thành công');
       }
    })
