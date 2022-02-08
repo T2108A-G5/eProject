@@ -291,3 +291,10 @@ footer div a i img{
     line-height: 40px;
     width: 165px
 }
+
+#username:focus-visible ,#password:focus-visible{
+    outline: none;
+}
+.message{
+    color: red;
+}
