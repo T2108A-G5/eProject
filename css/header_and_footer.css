@@ -274,3 +274,20 @@ footer div a i img{
          width: 45%;
      }
 }
+
+.login-facebook , .login-facebook:hover{
+    background-color: #4267b2;
+    border-radius: 20px;
+    color: #FFFFFF;
+    height: 40px;
+    line-height: 40px;
+    width: 165px
+}
+.login-google , .login-google:hover{
+    color: #999999;
+    border-radius: 20px;
+    border: 1px solid #999999;
+    height: 40px;
+    line-height: 40px;
+    width: 165px
+}

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/puppy_library.css">
     <link rel="stylesheet" href="css/FAQ.css">
     <script src="js/FAQ.js"></script>
+    <script src="js/login.js"></script>
 </head>
 <body>
 <!--start-->
@@ -43,13 +44,75 @@
                                 <a class="nav-link" href="puppy_contact.html">Liên hệ</a>
                             </li>
                             <li class="nav-item">
-                                <a href="login.html" class="btn-login" style="margin-right:0px">
+                                <a href="login.html" class="btn-login" style="margin-right:0px" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                     Đăng nhập
-                                </a></li>
+                                </a>
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+
+                                                <h2 class=" text-center">Đăng nhập</h2>
+
+                                                <div class="message not-account"></div>
+
+                                                <div class="border px-2 border-info w-75 mx-auto" style="border-radius: 5px">
+                                                    <div class="text-start" style="font-size: 15px">User name</div>
+                                                    <input type="text" id="username" class="w-100 border-0 text-info">
+                                                </div>
+                                                <div class="message login-username me-5 mt-3">
+                                                    Vui lòng nhập User name !
+                                                </div>
+
+                                                <div class="border px-2 border-info w-75 mx-auto mt-3" style="border-radius: 5px">
+                                                    <div class="text-start" style="font-size: 15px">Password</div>
+                                                    <input type="password" id="password" class="w-100 border-0 text-info">
+                                                </div>
+                                                <div class="message login-password me-5 mt-3">
+                                                    Vui lòng nhập Password !
+
+                                                </div>
+                                                <div class="w-75 mx-auto mt-3 d-flex justify-content-between">
+                                                    <label class="user-select-none"><input type="checkbox" id="login-showpass" class="me-1">show password</label>
+                                                    <a class="text-info" href="#">Quên mật khẩu?</a>
+                                                </div>
+
+                                                <div class="w-75 mx-auto mt-3">
+                                                    <input type="submit" class="btn btn-info  w-100 " id="login" style="border-radius: 10px" value="Đăng nhập">
+                                                </div>
+                                                <hr class="mt-5">
+
+                                                <div class="text-center position-relative" style="top: -30px">
+
+                                                    <span class=" px-3" style="background-color: #FFFFFF">OR</span>
+                                                </div>
+                                                <div class="d-flex justify-content-center">
+                                                    <a class="px-3 login-facebook" href="#">
+                                                        <img src="img/icon/Facebook_icon_login.png" class="pe-2" style="width: 35px">Facebook
+                                                    </a>
+                                                    <a class="px-3 login-google text-center" href="#">
+                                                        <img src="img/icon/google_icon_login.png" class="pe-2" style="width: 35px">Google
+                                                    </a>
+                                                </div>
+
+                                                <div class="text-center mt-3">
+                                                    <span>Bạn chưa có tài khoản?</span><a href="#" class="text-info">Đăng kí ngay.</a>
+                                                </div>
+
+                                            </div>
+                                            <div class="modal-footer justify-content-center">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
                         </ul>
                     </div>
