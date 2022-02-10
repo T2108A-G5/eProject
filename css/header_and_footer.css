@@ -280,7 +280,7 @@ footer div a i img{
     border-radius: 20px;
     color: #FFFFFF;
     height: 40px;
-    line-height: 40px;
+    line-height: 35px;
     width: 165px
 }
 .login-google , .login-google:hover{
@@ -288,7 +288,7 @@ footer div a i img{
     border-radius: 20px;
     border: 1px solid #999999;
     height: 40px;
-    line-height: 40px;
+    line-height: 35px;
     width: 165px
 }
 
