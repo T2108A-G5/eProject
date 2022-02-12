@@ -6,3 +6,7 @@ ul .menu , ul .menu a{
     text-decoration: none;
     background-color: #fff;
 }
+
+td{
+    line-height: 50px;
+}
