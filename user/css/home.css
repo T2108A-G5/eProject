@@ -115,7 +115,8 @@ section .p-4{
     left: 100px;
     display: none;
 }
-#searchNameDog:focus ~ #listNameDog{
+
+#searchNameDog:focus ~ #listNameDog,#listNameDog:hover{
     display: block;
     background-color: #FFFFFF;
     width: 100%;
