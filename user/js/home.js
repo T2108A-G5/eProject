@@ -5,15 +5,14 @@ $(document).ready(function(){
         var value = $(this).val().toLowerCase();
         $("#listNameDog .item-name-dog").filter(function() {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+
         });
     });
+
+
 });
 
-angular.module('myDog',[])
 
-myDog.controller('listDog',function ($scope){
-
-})
 
 
 
