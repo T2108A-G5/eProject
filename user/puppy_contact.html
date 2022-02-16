@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Puppy | Liên hệ</title>
     <link rel="shortcut icon" type="image/x-icon" href="img/icon/icon_puppy.jpg">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -52,7 +52,7 @@
                                     Đăng nhập
                                 </a>
                                 <!-- Modal -->
-                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <form class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog modal-dialog-centered">
                                         <div class="modal-content">
                                             <div class="modal-header">
@@ -64,29 +64,31 @@
 
                                                 <div class="message not-account"></div>
 
-                                                <div class="border px-2 border-purple w-75 mx-auto" style="border-radius: 5px">
-                                                    <label class="text-start user-select-none d-block" style="font-size: 15px">User name</label>
-                                                    <input type="text" id="username" class="w-100 border-0 text-purple">
+                                                <div class="border px-2 border-purple w-75 mx-auto" id="form-user" style="border-radius: 5px">
+                                                    <label class="text-start user-select-none d-block" style="font-size: 15px">Tài khoản</label>
+                                                    <input type="text" id="username" class="w-100 border-0 text-purple login">
                                                 </div>
-                                                <div class="message login-username me-5 mt-3">
-                                                    Vui lòng nhập User name !
+                                                <div class="message login-username me-5 mt-3" style="font-size: 15px">
+                                                    Vui lòng nhập Tài khoản !
                                                 </div>
 
-                                                <div class="border px-2 border-purple w-75 mx-auto mt-3" style="border-radius: 5px">
-                                                    <label class="text-start d-block user-select-none" style="font-size: 15px">Password</label>
-                                                    <input type="password" id="password" class="w-100 border-0 text-purple">
+                                                <div class="border px-2 border-purple w-75 mx-auto mt-3" id="form-password" style="border-radius: 5px">
+                                                    <label class="text-start d-block user-select-none" style="font-size: 15px">mật khẩu</label>
+                                                    <input type="password" id="password" class="w-100 border-0 text-purple login">
                                                 </div>
-                                                <div class="message login-password me-5 mt-3">
-                                                    Vui lòng nhập Password !
-
+                                                <div class="message login-password me-5 mt-3 " style="font-size: 15px">
+                                                    Vui lòng nhập Mật khẩu !
                                                 </div>
                                                 <div class="w-75 mx-auto mt-3 d-flex justify-content-between">
-                                                    <label class="user-select-none"><input type="checkbox" id="login-showpass" class="me-1">show password</label>
-                                                    <a class="text-purple" href="#">Quên mật khẩu?</a>
+                                                    <label class="user-select-none d-flex align-items-center" >
+                                                        <input type="checkbox" id="login-showpass" class="me-1">
+                                                        <span style="font-size: 15px" >Hiển thị mật khẩu</span>
+                                                    </label>
+                                                    <a class="text-purple" style="font-size: 15px" href="#" >Quên mật khẩu?</a>
                                                 </div>
 
                                                 <div class="w-75 mx-auto mt-3">
-                                                    <input type="submit" class="btn btn-purple  w-100 " id="login" style="border-radius: 10px" value="Đăng nhập">
+                                                    <input type="submit" class="btn btn-purple text-white  w-100 " id="login" style="border-radius: 10px" value="Đăng nhập">
                                                 </div>
                                                 <hr class="mt-5">
 
@@ -144,7 +146,7 @@
     <div class="row d-flex justify-content-between">
 
         <div class="col-md-6">
-            <form>
+            <form id="contact">
                 <div class="d-flex justify-content-between">
                     <input type="text" id="Ho" class="" placeholder="Họ"/>
                     <input type="text" id="Ten" class="" placeholder="Tên"/>
@@ -199,7 +201,7 @@
                     </svg>
                 </div>
 
-                <input type="submit"  class="btn btn-info mt-3" id="submitFormContact">
+                <input type="submit"  class="btn btn-purple mt-3 text-white" id="submitFormContact" value="Gửi">
             </form>
         </div>
 
@@ -277,24 +279,7 @@
             </p>
         </div>
         <!-- Grid column -->
-        <div class="col-md-2  mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-                Hỗ trợ
-            </h6>
-            <p>
-                <a href="#!" class="text-reset">HoangPhu</a>
-            </p>
-            <p>
-                <a href="#!" class="text-reset">PhuongNam</a>
-            </p>
-            <p>
-                <a href="#!" class="text-reset">TrinhHiep</a>
-            </p>
-            <p>
-                <a href="#!" class="text-reset">LamDuc</a>
-            </p>
-        </div>
+
         <!-- Grid column -->
         <div class="col-md-2 mx-auto mb-4">
             <!-- Links -->
@@ -302,7 +287,7 @@
                 Đường dẫn nhanh
             </h6>
             <p>
-                <a href="home.html" class="text-reset">Trang chủ</a>
+                <a href="#" class="text-reset">Trang chủ</a>
             </p>
             <p>
                 <a href="puppy_care.html" class="text-reset">Chăm sóc</a>
@@ -311,7 +296,7 @@
                 <a href="FAQ.html" class="text-reset">FQA</a>
             </p>
             <p>
-                <a href="#" class="text-reset">Liên hệ</a>
+                <a href="puppy_contact.html" class="text-reset">Liên hệ</a>
             </p>
         </div>
     </div>

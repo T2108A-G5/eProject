@@ -7,34 +7,45 @@ $(document).ready(function (){
    $('#submitFormContact').click(function (){
 
      if ($('#content').val() ==null|| $('#content').val() == ''){
+         $('#content').addClass('error');
          $('.message.content').show();
          $('#content').focus();
          submit =false;
       }
      else{
+         $('#content').removeClass('error');
          $('.message.content').hide();
      }
 
      if ($('#email').val() ==null|| $('#email').val() == ''){
+         $('#email').addClass('error');
            $('.message.email').show();
            $('#email').focus();
            submit =false;
        }else{
+         $('#email').removeClass('error');
            $('.message.email').hide();
        }
 
        if (ho.val()==''|| ho.val()==null){
+           ho.addClass('error');
            $('.message.name').show();
            $('#Ho').focus();
            submit = false;
        }
+       else{
+           ho.removeClass('error');
+           $('.message.name').show();
+       }
 
-       else if ($('#Ten').val() ==null|| $('#Ten').val() =='') {
+        if ($('#Ten').val() ==null|| $('#Ten').val() =='') {
+           $('#Ten').addClass('error');
            $('.message.name').show();
            $('#Ten').focus();
            submit =false;
        }
        else{
+            $('#Ten').removeClass('error');
            $('.message.name').hide();
        }
 
@@ -43,8 +54,9 @@ $(document).ready(function (){
          return false;
      }
      else{
-         alert('dang nhap thanh cong');
+         alert('Gui thanh cong');
      }
 
-   })
+   });
+
 });

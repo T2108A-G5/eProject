@@ -311,7 +311,9 @@ footer div a i img{
     border-color: #6504b5 !important;
 }
 .btn-purple {
-    color: #000 !important;
     background-color: #6504b5 !important;
     border-color:#6504b5 !important;
+}
+.error{
+    border-color: red !important;
 }

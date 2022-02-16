@@ -59,7 +59,7 @@
                                         Đăng nhập
                                     </a>
                                     <!-- Modal -->
-                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <form class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog modal-dialog-centered">
                                             <div class="modal-content">
                                                 <div class="modal-header">
@@ -71,29 +71,31 @@
 
                                                                 <div class="message not-account"></div>
 
-                                                                <div class="border px-2 border-purple w-75 mx-auto" style="border-radius: 5px">
-                                                                    <label class="text-start user-select-none d-block" style="font-size: 15px">User name</label>
-                                                                    <input type="text" id="username" class="w-100 border-0 text-purple">
+                                                                <div class="border px-2 border-purple w-75 mx-auto" id="form-user" style="border-radius: 5px">
+                                                                    <label class="text-start user-select-none d-block" style="font-size: 15px">Tài khoản</label>
+                                                                    <input type="text" id="username" class="w-100 border-0 text-purple login">
                                                                 </div>
-                                                                    <div class="message login-username me-5 mt-3">
-                                                                        Vui lòng nhập User name !
+                                                                    <div class="message login-username me-5 mt-3" style="font-size: 15px">
+                                                                        Vui lòng nhập Tài khoản !
                                                                     </div>
 
-                                                                <div class="border px-2 border-purple w-75 mx-auto mt-3" style="border-radius: 5px">
-                                                                    <label class="text-start d-block user-select-none" style="font-size: 15px">Password</label>
-                                                                    <input type="password" id="password" class="w-100 border-0 text-purple">
+                                                                <div class="border px-2 border-purple w-75 mx-auto mt-3" id="form-password" style="border-radius: 5px">
+                                                                    <label class="text-start d-block user-select-none" style="font-size: 15px">mật khẩu</label>
+                                                                    <input type="password" id="password" class="w-100 border-0 text-purple login">
                                                                 </div>
-                                                                    <div class="message login-password me-5 mt-3">
-                                                                        Vui lòng nhập Password !
-
+                                                                    <div class="message login-password me-5 mt-3 " style="font-size: 15px">
+                                                                        Vui lòng nhập Mật khẩu !
                                                                     </div>
                                                                 <div class="w-75 mx-auto mt-3 d-flex justify-content-between">
-                                                                    <label class="user-select-none"><input type="checkbox" id="login-showpass" class="me-1">show password</label>
-                                                                    <a class="text-purple" href="#">Quên mật khẩu?</a>
+                                                                    <label class="user-select-none d-flex align-items-center" >
+                                                                        <input type="checkbox" id="login-showpass" class="me-1">
+                                                                        <span style="font-size: 15px" >Hiển thị mật khẩu</span>
+                                                                    </label>
+                                                                    <a class="text-purple" style="font-size: 15px" href="#" >Quên mật khẩu?</a>
                                                                 </div>
 
                                                                 <div class="w-75 mx-auto mt-3">
-                                                                    <input type="submit" class="btn btn-purple  w-100 " id="login" style="border-radius: 10px" value="Đăng nhập">
+                                                                    <input type="submit" class="btn btn-purple  w-100 text-white" id="login" style="border-radius: 10px" value="Đăng nhập">
                                                                 </div>
                                                                     <hr class="mt-5">
 
@@ -119,7 +121,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </form>
                                 </li>
                             </ul>
                         </div>
