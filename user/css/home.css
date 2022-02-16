@@ -247,3 +247,15 @@ section .p-4{
 .hide{
  display: none;
 }
+
+.list-dog .item-dog a:hover{
+    color: #6504b5;
+    text-decoration: underline;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+#carouselExampleControls .carousel-inner .carousel-item .card a:hover{
+    background: #6504b5;
+    color: #FFFFFF !important;
+    border-radius: 5px;
+}
