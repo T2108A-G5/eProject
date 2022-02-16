@@ -14,12 +14,15 @@ h2{
     font-weight: 700;
 }
 div header a:hover{
-    color: #00BFFF;
+    color: #6504b5;
+}
+.menu-header{
+    background-color: #6504b5;
 }
 header.sticky{
     background: white;
-    background: linear-gradient(to bottom, #FFFFFF 0%, #00BFFF 100%);       /* */
-    background: -webkit-linear-gradient(top, #FFFFFF 0%, #00BFFF 100%);
+    background: linear-gradient(to bottom, #FFFFFF 0%, #6504b5 100%);       /* */
+    background: -webkit-linear-gradient(top, #FFFFFF 0%, #6504b5 100%);
 }
 header{
     position: fixed;
@@ -90,7 +93,7 @@ header ul li a{
 .text-logo{
     position: relative;
     text-decoration: none;
-    color: #00BFFF;
+    color: #6504b5;
     font-size: 50px;
     text-transform: uppercase;
     align-items: center;
@@ -136,7 +139,7 @@ header ul li a{
 }
 .btn-login:hover{
     color: #ffffff;
-    background-color: #00BFFF;
+    background-color: #6504b5;
     box-shadow: 0 0 10px #ffffff, 0 0 40px #ffffff, 0 0 80px #ffffff;
     transition-delay: 1s;
 
@@ -204,7 +207,7 @@ header ul li a{
     display: flex;
     flex-flow: row wrap;
     color: #fff;
-    background: #977dfc;
+    background: #6504b5;
 }
 
 .footer >*{
@@ -297,4 +300,13 @@ footer div a i img{
 }
 .message{
     color: red;
+}
+.text-purple{
+    color: #6504b5;
+}
+.bg-purple{
+    background: #6504b5;
+}
+.border-purple{
+    border: 1px solid #6504b5;
 }
