@@ -7,3 +7,18 @@
 .textA{
     font-family: Arial;
 }
+
+.container .row.shadow-content a:hover{
+    text-decoration: underline;
+
+}
+
+.container .row.shadow-content a{
+    text-decoration: none;
+}
+
+.col-md-8 p{
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    word-break: break-word;
+}
