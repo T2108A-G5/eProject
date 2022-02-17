@@ -105,7 +105,20 @@ section .p-4{
     border-radius: 5px;
 
 }
+.textA{
+    font-family: Arial;
+    color: mediumpurple;
+    font-weight: bold;
+}
 
+.textB{
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.textC{
+    font-family: Arial;
+}
 .container .position-absolute ,.container .position-absolute .d-flex a {
     color: black;
     font-family: 'poppins',SansSerif;
