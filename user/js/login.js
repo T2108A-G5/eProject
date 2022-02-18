@@ -44,5 +44,12 @@ $(document).ready(function (){
             $('#password').attr('type','password');
         }
     })
+    $('#Form-login').click(function (){
+        $('#FormDangKy').removeClass('active');
+        $('#FormDangKy').addClass('hide');
+        $('#FormDangNhap').removeClass('hide');
+        $('#FormDangNhap').addClass('active');
+
+    });
 
 });
