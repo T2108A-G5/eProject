@@ -21,6 +21,7 @@
     <script src="js/scroll_menu_html.js"></script>
     <script src="js/home.js"></script>
     <script src="js/login.js"></script>
+    <script src="js/register.js"></script>
 </head>
 <body >
     <!-- start header-->
@@ -51,79 +52,146 @@
                                     <a class="nav-link textA" href="puppy_contact.html">Liên hệ</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="login.html" class="btn-login textB" style="margin-right:0px" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <a class="btn-login textB" style="margin-right:0px;cursor: pointer" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                         <span></span>
                                         <span></span>
                                         <span></span>
                                         <span></span>
                                         Đăng nhập
                                     </a>
+                                </li>
+                            </ul>
                                     <!-- Modal -->
-                                    <form class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog modal-dialog-centered">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                         </div>
                                                             <div class="modal-body">
+                                                                <form id="FormDangNhap">
+                                                                    <h2 class=" text-center">Đăng nhập</h2>
 
-                                                                <h2 class=" text-center">Đăng nhập</h2>
+                                                                    <div class="message not-account"></div>
 
-                                                                <div class="message not-account"></div>
+                                                                    <div class="border px-2 border-purple w-75 mx-auto" id="form-user" style="border-radius: 5px">
+                                                                        <label class="text-start user-select-none d-block" style="font-size: 15px">Tài khoản</label>
+                                                                        <input type="text" id="username" class="w-100 border-0 text-purple">
+                                                                    </div>
+                                                                        <div class="message login-username me-5 mt-3" style="font-size: 15px">
+                                                                            Vui lòng nhập tên Tài khoản !
+                                                                        </div>
 
-                                                                <div class="border px-2 border-purple w-75 mx-auto" id="form-user" style="border-radius: 5px">
-                                                                    <label class="text-start user-select-none d-block" style="font-size: 15px">Tài khoản</label>
-                                                                    <input type="text" id="username" class="w-100 border-0 text-purple login">
-                                                                </div>
-                                                                    <div class="message login-username me-5 mt-3" style="font-size: 15px">
-                                                                        Vui lòng nhập Tài khoản !
+                                                                    <div class="border px-2 border-purple w-75 mx-auto mt-3" id="form-password" style="border-radius: 5px">
+                                                                        <label class="text-start d-block user-select-none" style="font-size: 15px">mật khẩu</label>
+                                                                        <input type="password" id="password" class="w-100 border-0 text-purple ">
+                                                                    </div>
+                                                                        <div class="message login-password me-5 mt-3 " style="font-size: 15px">
+                                                                            Vui lòng nhập Mật khẩu !
+                                                                        </div>
+                                                                    <div class="w-75 mx-auto mt-3 d-flex justify-content-between">
+                                                                        <label class="user-select-none d-flex align-items-center" >
+                                                                            <input type="checkbox" id="login-showpass" class="me-1">
+                                                                            <span style="font-size: 15px" >Hiển thị mật khẩu</span>
+                                                                        </label>
+                                                                        <a class="text-purple" style="font-size: 15px" href="#" >Quên mật khẩu?</a>
                                                                     </div>
 
-                                                                <div class="border px-2 border-purple w-75 mx-auto mt-3" id="form-password" style="border-radius: 5px">
-                                                                    <label class="text-start d-block user-select-none" style="font-size: 15px">mật khẩu</label>
-                                                                    <input type="password" id="password" class="w-100 border-0 text-purple login">
-                                                                </div>
-                                                                    <div class="message login-password me-5 mt-3 " style="font-size: 15px">
-                                                                        Vui lòng nhập Mật khẩu !
+                                                                    <div class="w-75 mx-auto mt-3">
+                                                                        <input type="submit" class="btn btn-purple  w-100 text-white" id="login" style="border-radius: 10px" value="Đăng nhập">
                                                                     </div>
-                                                                <div class="w-75 mx-auto mt-3 d-flex justify-content-between">
-                                                                    <label class="user-select-none d-flex align-items-center" >
-                                                                        <input type="checkbox" id="login-showpass" class="me-1">
-                                                                        <span style="font-size: 15px" >Hiển thị mật khẩu</span>
-                                                                    </label>
-                                                                    <a class="text-purple" style="font-size: 15px" href="#" >Quên mật khẩu?</a>
-                                                                </div>
-
-                                                                <div class="w-75 mx-auto mt-3">
-                                                                    <input type="submit" class="btn btn-purple  w-100 text-white" id="login" style="border-radius: 10px" value="Đăng nhập">
-                                                                </div>
                                                                     <hr class="mt-5">
 
-                                                                <div class="text-center position-relative" style="top: -30px">
+                                                                    <div class="text-center position-relative" style="top: -30px">
 
-                                                                    <span class=" px-3" style="background-color: #FFFFFF">Hoặc</span>
-                                                                </div>
-                                                                <div class="d-flex justify-content-center">
-                                                                    <a class="px-3 login-facebook" href="#">
-                                                                        <img src="img/icon/Facebook_icon_login.png" class="pe-2" style="width: 35px">Facebook
-                                                                    </a>
-                                                                    <a class="px-3 login-google text-center" href="#">
-                                                                        <img src="img/icon/google_icon_login.png" class="pe-2" style="width: 35px">Google
-                                                                    </a>
-                                                                </div>
+                                                                        <span class=" px-3" style="background-color: #FFFFFF">Hoặc</span>
+                                                                    </div>
+                                                                    <div class="d-flex justify-content-center">
+                                                                        <a class="px-3 login-facebook" href="#">
+                                                                            <img src="img/icon/Facebook_icon_login.png" class="pe-2" style="width: 35px">Facebook
+                                                                        </a>
+                                                                        <a class="px-3 login-google text-center" href="#">
+                                                                            <img src="img/icon/google_icon_login.png" class="pe-2" style="width: 35px">Google
+                                                                        </a>
+                                                                    </div>
 
-                                                                <div class="text-center mt-3">
-                                                                    <span>Bạn chưa có tài khoản?</span><a href="#" class="text-purple">Đăng kí ngay.</a>
-                                                                </div>
+                                                                    <div class="text-center mt-3">
+                                                                        <span>Bạn chưa có tài khoản?</span><a id="Form-register" href="#FormDangKy" class="text-purple"> Đăng kí ngay.</a>
+                                                                    </div>
+
+
+                                                                </form><!--form đăng nhập-->
+
+                                                                <form id="FormDangKy" class="hide">
+                                                                    <h2 class=" text-center">Đăng Ký tài khoản</h2>
+
+                                                                    <div class="border px-2 border-purple w-75 mx-auto" id="form-name" style="border-radius: 5px">
+                                                                        <label class="text-start user-select-none d-block" style="font-size: 15px">Họ và Tên</label>
+                                                                        <input type="text" id="register-name" class="w-100 border-0 text-purple">
+                                                                    </div>
+
+                                                                    <div class="message register-name me-5 mt-3" style="font-size: 15px">
+                                                                        Vui lòng nhập họ và tên !
+                                                                    </div>
+
+                                                                    <div class="border px-2 border-purple w-75 mx-auto mt-3" id="form-register-username" style="border-radius: 5px">
+                                                                        <label class="text-start user-select-none d-block" style="font-size: 15px">Tài khoản</label>
+                                                                        <input type="text" id="register-username" class="w-100 border-0 text-purple ">
+                                                                    </div>
+                                                                    <div class="message register-username me-5 mt-3" style="font-size: 15px">
+                                                                        Vui lòng nhập tên Tài khoản !
+                                                                    </div>
+                                                                    <div class="border px-2 border-purple w-75 mx-auto mt-3" id="form-register-password" style="border-radius: 5px">
+                                                                        <label class="text-start d-block user-select-none" style="font-size: 15px">mật khẩu</label>
+                                                                        <input type="password" id="register-password" class="w-100 border-0 text-purple ">
+                                                                    </div>
+                                                                    <div class="message register-password me-5 mt-3 " style="font-size: 15px">
+                                                                                Vui lòng nhập Mật khẩu !
+                                                                    </div>
+                                                                    <div class="border px-2 border-purple w-75 mx-auto mt-3" id="form-comfirm-password" style="border-radius: 5px">
+                                                                        <label class="text-start d-block user-select-none" style="font-size: 15px">nhập lại mật khẩu</label>
+                                                                        <input type="password" id="comfirm-password" class="w-100 border-0 text-purple ">
+                                                                    </div>
+                                                                    <div class="message comfirm-password me-5 mt-3 " style="font-size: 15px">
+                                                                    </div>
+
+                                                                    <div class="w-75 mx-auto mt-3">
+                                                                        <label class="user-select-none d-flex align-items-center" >
+                                                                            <input type="checkbox" class="me-1 showpass">
+                                                                            <span style="font-size: 15px" >Hiển thị mật khẩu</span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="w-75 mx-auto mt-3">
+                                                                        <input type="submit" class="btn btn-purple  w-100 text-white" id="register" style="border-radius: 10px" value="Đăng Ký">
+                                                                    </div>
+                                                                    <hr class="mt-5">
+
+                                                                    <div class="text-center position-relative" style="top: -30px">
+
+                                                                        <span class=" px-3" style="background-color: #FFFFFF">Hoặc</span>
+                                                                    </div>
+                                                                    <div class="d-flex justify-content-center">
+                                                                        <a class="px-3 login-facebook" href="#">
+                                                                            <img src="img/icon/Facebook_icon_login.png" class="pe-2" style="width: 35px">Facebook
+                                                                        </a>
+                                                                        <a class="px-3 login-google text-center" href="#">
+                                                                            <img src="img/icon/google_icon_login.png" class="pe-2" style="width: 35px">Google
+                                                                        </a>
+                                                                    </div>
+
+                                                                    <div class="text-center mt-3">
+                                                                        <span>Bạn đã có tài khoản?</span><a id="Form-login" href="#FormDangNhap" class="text-purple"> Đăng Nhập</a>
+                                                                    </div>
+
+
+                                                                </form><!--Form đăng ký-->
 
                                                             </div>
                                                 <div class="modal-footer justify-content-center">
                                                 </div>
                                             </div>
                                         </div>
-                                    </form>
-                                </li>
-                            </ul>
+                                    </div>
                         </div>
                     </div>
                 </nav>
@@ -135,7 +203,7 @@
                 ;width: 500px; height: 250px">
                 <h3 class="text-center textC">Tìm loài chó bạn muốn</h3>
                 <div class="d-flex justify-content-center">
-                    <div style="background: #FFFFFF;width: 300px;height: 40px" >
+                    <div style="background: #FFFFFF;width: 300px;height: 40px;border-radius: 5px" >
                         <input type="text" placeholder="Tên loài chó"  class="textC" name="searchNameDog" id="searchNameDog">
                         <ul class="position-absolute list-group h-100" id="listNameDog">
                                 <li class="item-name-dog list-group-item" ><a href="dog_detail.html">Affenpinscher</a></li>

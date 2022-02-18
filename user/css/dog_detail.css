@@ -17,8 +17,36 @@
     text-decoration: none;
 }
 
-.col-md-8 p{
+p, .text{
     letter-spacing: 1.2px;
     line-height: 30px;
     word-break: break-word;
+}
+
+.progress{
+    height: 35px;
+    font-size: 100px;
+}
+
+.cmt,#thich{
+    text-decoration: none;
+    color: black;
+    user-select: none;
+    padding: 5px 50px;
+    border-radius: 5px;
+}
+.cmt:hover,#thich:hover{
+    background: #e7e7e7;
+    color: black;
+}
+
+.avatar{
+    width: 40px;
+}
+.binhLuan{
+    border: none;
+    height: 40px;
+}
+input:focus-visible{
+    outline: none;
 }

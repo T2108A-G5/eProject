@@ -2,7 +2,9 @@
     font-size: 1.2em;
     color: #7C99AC;
 }
-
+input:focus-visible{
+    outline: none;
+}
 #content div p span{
     font-size: 1.2em;
     color: #ff9b04;

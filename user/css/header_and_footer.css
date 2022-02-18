@@ -20,9 +20,9 @@ div header a:hover{
     background-color: #6504b5;
 }
 header.sticky{
-    background: white;
-    background: linear-gradient(to bottom, #FFFFFF 0%, #6504b5 100%);       /* */
-    background: -webkit-linear-gradient(top, #FFFFFF 0%, #6504b5 100%);
+    /*background: white;*/
+    /*background: linear-gradient(to bottom, #FFFFFF 0%, #6504b5 100%);       !* *!*/
+    /*background: -webkit-linear-gradient(top, #FFFFFF 0%, #6504b5 100%);*/
 }
 header{
     position: fixed;
@@ -284,7 +284,8 @@ footer div a i img{
     color: #FFFFFF;
     height: 40px;
     line-height: 35px;
-    width: 165px
+    width: 165px;
+    margin: 0 15px;
 }
 .login-google , .login-google:hover{
     color: #999999;
@@ -292,7 +293,8 @@ footer div a i img{
     border: 1px solid #999999;
     height: 40px;
     line-height: 35px;
-    width: 165px
+    width: 165px;
+    margin: 0 15px;
 }
 
 #username:focus-visible ,#password:focus-visible{
@@ -316,4 +318,16 @@ footer div a i img{
 }
 .error{
     border-color: red !important;
+}
+
+.navbar .collapse .navbar-nav .nav-item a{
+    color: white;
+}
+
+.hide{
+    display: none !important;
+}
+.active{
+    display: block !important;
+
 }
