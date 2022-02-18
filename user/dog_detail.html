@@ -425,43 +425,107 @@
             </div>
         </div>
 
-    <!--comment-->
-    <div class="container">
-        <div class="row">
-            <hr class="mt-5"/>
-            <div class="row row-cols-2">
-                <!--Thích-->
-                <div>
-                    <a id="thich">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16" style="color: red">
-                            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                        </svg> Thích
-                    </a>
-                </div>
-                <!--bình luận-->
-                <div>
-                    <a class="cmt">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left" viewBox="0 0 16 16">
-                            <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-                        </svg> Bình Luận
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="row">
-                <hr class="mt-3"/>
-                <div id="binhLuan d-flex align-items-center">
-                    <label class="w-100 border ">
-                        <img src="../editor/img/icon/avatar.jfif" class="avatar">
-                        <input type="text" class="binhLuan px-2 w-75">
-                    </label>
-                </div>
-            </div>
-        </div>
     </div>
 
+
+<!-- Comment -->
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <div class="comments">
+                <div class="comments-details">
+                    <span class="total-comments comments-sort textA">4 Bình luận</span>
+               <select>
+                  <option selected>Open this select menu</option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+          </span>
+                </div>
+                <div class="comment-box add-comment">
+          <span class="commenter-pic">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTht9-qZYmqErdGMhJVbRf7BfhLRGspNWaFnR8nddu3x7Da7nqh23vsG6VWtG_VE9G9kLU&usqp=CAU" class="img-fluid">
+          </span>
+                    <span class="commenter-name">
+            <input type="text" placeholder="Add a public comment" name="Add Comment">
+            <button type="submit" class="btn btn-default">Bình luận</button>
+          </span>
+                </div>
+                <div class="comment-box">
+          <span class="commenter-pic">
+            <img src="https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/272870961_478347863731059_1123568796221503322_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=dk1sf-159H8AX_A3x1y&tn=RHKZTCzk427E1tX_&_nc_ht=scontent.fhan15-2.fna&oh=00_AT-_8V0iHnRrcC4T9TJUSagUPLmQS87qWmS46KvujSOacQ&oe=6215540B" class="img-fluid">
+          </span>
+                    <span class="commenter-name">
+            <a class="textA" href="#">lamduc12</a> <span class="comment-time textA">48 minutes ago</span>
+          </span>
+                    <p class="comment-txt more">Cần shop tư vấn nên cho ăn loại thức ăn nào.</p>
+                    <div class="comment-meta">
+                        <button class="comment-like"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> </button>
+                        <button class="comment-dislike"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> </button>
+                        <button class="comment-reply reply-popup"><i class="fa fa-reply-all" aria-hidden="true"></i> Phản hồi</button>
+                    </div>
+                    <div class="comment-box add-comment reply-box">
+            <span class="commenter-pic">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTht9-qZYmqErdGMhJVbRf7BfhLRGspNWaFnR8nddu3x7Da7nqh23vsG6VWtG_VE9G9kLU&usqp=CAU" class="img-fluid">
+            </span>
+                        <span class="commenter-name">
+              <input type="text" placeholder="Add a public reply" name="Add Comment">
+              <button type="submit" class="btn btn-default">Reply</button>
+              <button type="cancel" class="btn btn-default reply-popup">Cancel</button>
+            </span>
+                    </div>
+                </div>
+                <div class="comment-box">
+          <span class="commenter-pic">
+            <img src="https://scontent.fhan15-2.fna.fbcdn.net/v/t39.30808-6/248146781_1528348207531028_8284739222124687068_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=VDbUEdyHqLAAX_xJdDJ&_nc_ht=scontent.fhan15-2.fna&oh=00_AT9vuFTc4nXgz_6Ph2D_NqspImakzRRGUZU0Zihxpg7qTg&oe=62156459" class="img-fluid">
+          </span>
+                    <span class="commenter-name">
+            <a class="textA" href="#">Hiepp</a> <span class="comment-time">3 hours ago</span>
+          </span>
+                    <p class="comment-txt more">Cún nhà em 2 tháng chưa tiêm vac xin gì cả, em thấy bài viết nêu là dưới 1 năm thì tiêm đầy đủ. Vậy 2 tháng mà chưa tiêm vẫn an toàn chứ ạ.</p>
+                    <div class="comment-meta">
+                        <button class="comment-like"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> </button>
+                        <button class="comment-dislike"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> </button>
+                        <button class="comment-reply"><i class="fa fa-reply-all" aria-hidden="true"></i> Phản hồi</button>
+                    </div>
+                    <div class="comment-box replied">
+            <span class="commenter-pic">
+              <img src="https://scr.vn/wp-content/uploads/2020/07/%E1%BA%A2nh-%C4%91%E1%BA%A1i-di%E1%BB%87n-FB-m%E1%BA%B7c-%C4%91%E1%BB%8Bnh-n%E1%BB%AF.jpg" class="img-fluid">
+            </span>
+                        <span class="commenter-name">
+              <a class="textA" href="#">phú</a> <span class="comment-time">2 hours ago</span>
+            </span>
+                        <p class="comment-txt more">Ko an toàn nhé, 1.5 tháng là chích ngừa dc r.</p>
+                        <div class="comment-meta">
+                            <button class="comment-like"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> </button>
+                            <button class="comment-dislike"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> </button>
+                            <button class="comment-reply"><i class="fa fa-reply-all" aria-hidden="true"></i> Phản hồi</button>
+                        </div>
+                        <div class="comment-box replied">
+              <span class="commenter-pic">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTht9-qZYmqErdGMhJVbRf7BfhLRGspNWaFnR8nddu3x7Da7nqh23vsG6VWtG_VE9G9kLU&usqp=CAU" class="img-fluid">
+              </span>
+                            <span class="commenter-name">
+                <a class="textA" href="#">PhNam1</a> <span class="comment-time">2 hours ago</span>
+              </span>
+                            <p class="comment-txt more">e đã cho cún đi tiêm mũi đầu rồi, cún nhà em khỏe mạnh và nghịch ngợm lắm ạ.</p>
+                            <div class="comment-meta">
+                                <button class="comment-like"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> 99</button>
+                                <button class="comment-dislike"><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> 149</button>
+                                <button class="comment-reply"><i class="fa fa-reply-all" aria-hidden="true"></i> Reply</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+</body>
+
+<!--End comment-->
+
 <!--footer-->
 
 <footer class="footer">
@@ -551,6 +615,13 @@
         </div>
     </div>
 </footer>
-
+<script>
+    // Reply box popup JS
+    $(document).ready(function(){
+        $(".reply-popup").click(function(){
+            $(".reply-box").toggle();
+        });
+    });
+</script>
 </body>
 </html>
