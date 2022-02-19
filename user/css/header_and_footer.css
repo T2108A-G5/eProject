@@ -331,3 +331,6 @@ footer div a i img{
     display: block !important;
 
 }
+input:focus-visible{
+     outline: none;
+}

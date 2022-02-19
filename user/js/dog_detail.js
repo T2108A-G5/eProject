@@ -1,22 +1,21 @@
 $(document).ready(function() {
-    var style = localStorage.getItem("styleIcon");
-    if (style == null) {
-        $(".heart").removeClass("is-active");
-        localStorage.setItem("styleIcon", "list");
-    } else if (style == "grid") {
-        $(".heart").addClass("is-active");
-    } else if (style == "list") {
-        $(".heart").removeClass("is-active");
-    }
-});
+    var date = Date.now();
+    const dtfUS = new Intl.DateTimeFormat('en', { year: 'numeric', month: '2-digit', day: '2-digit',
+        hour: '2-digit',minute: '2-digit', second: '2-digit' });
+    $('.time-comment').text(dtfUS.format(date));
 
-function checkStyle() {
-    var style = localStorage.getItem("styleIcon");
-    if (style == "grid") {
-        $(".heart").removeClass("is-active");
-        localStorage.setItem("styleIcon", "list");
-    } else if (style == "list") {
-        $(".heart").addClass("is-active");
-        localStorage.setItem("styleIcon", "grid");
-    }
-};
+    $('[data-toggle="collapse"]').on('click', function() {
+        var $this = $(this),
+            $parent = typeof $this.data('parent')!== 'undefined' ? $($this.data('parent')) : undefined;
+        if($parent === undefined) { /* Just toggle my  */
+            $this.find('.glyphicon').toggleClass('glyphicon-plus glyphicon-minus');
+            return true;
+        }
+
+        /* Open element will be close if parent !== undefined */
+        var currentIcon = $this.find('.glyphicon');
+        currentIcon.toggleClass('glyphicon-plus glyphicon-minus');
+        $parent.find('.glyphicon').not(currentIcon).removeClass('glyphicon-minus').addClass('glyphicon-plus');
+
+    });
+});
