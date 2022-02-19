@@ -1,0 +1,7 @@
+input:focus-visible{
+    outline: none;
+}
+.error{
+    border: 1px solid red;
+    box-shadow: 1px 1px 1px 1px red;
+}
