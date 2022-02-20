@@ -3,9 +3,11 @@ $(document).ready(function (){
     $('#themBaiViet').click(function (){
 
         var check = true;
-        if ( $('#choiceDog').val()=='' || $('#choiceDog').val()== null){
+        if ( $('#listDog').val()=='' || $('#listDog').val()== null){
+            $('#listDog').addClass('error');
+            $('#listDog').focus();
         }else{
-            $('choiceDog').removeClass('error');
+            $('#listDog').removeClass('error');
         }
 
 
