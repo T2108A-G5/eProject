@@ -7,7 +7,7 @@ $(document).ready(function (){
 
     $('#login').click(function (){
 
-        if ($('#password').val() == '' || $('#password').val() == null ){
+        if ($('#password').val().length <= 7 || $('#password').val() == null ){
             $('#form-password').addClass('error');
             $('.message.login-password').show();
             $('#password').focus();
